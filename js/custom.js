@@ -2,7 +2,7 @@
     Fixed Navbar
    =============================================== */
 jQuery(window).bind('scroll', function (){
-  if (jQuery(window).scrollTop() > 80){
+  if (jQuery(window).scrollTop() >=0){
     jQuery('.header').addClass('fixed-nav');
   } else {
     jQuery('.header').removeClass('fixed-nav');

@@ -29,6 +29,13 @@ Table of Index
 /* ================================
  	1. GLOBAL
    ================================ */
+
+#logo{
+	width: 50%;
+}
+.active_menu{
+	text-decoration: underline;
+}
 body {
 	font-size: 12px;
 	font-weight: normal;
@@ -271,7 +278,7 @@ input, textarea {
 	min-height: 1000px;
 }
 .bg-feature {
-	background: rgba(255, 255, 255, 0.8);
+	/*background: rgba(255, 255, 255, 0.8); */
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -504,7 +511,7 @@ input, textarea {
 	background: rgba(255, 255, 255, 0.8);
 }
 .page-title .title {
-	float: left;
+	float: right;
 	margin-top: 62px;
 }
 .page-title .title h1 {
