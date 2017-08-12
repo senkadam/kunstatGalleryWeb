@@ -7,6 +7,12 @@ jQuery(window).bind('scroll', function (){
   } else {
     jQuery('.header').removeClass('fixed-nav');
   }
+})
+
+$(document).ready(function() {
+
+    $("a.grouped_elements").fancybox();
+
 });
 /* ==============================================
     Preloader
