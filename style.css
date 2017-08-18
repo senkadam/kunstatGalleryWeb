@@ -1084,7 +1084,7 @@ footer {
 
 @media (max-width: 767px) {
 	.navbar-collapse.in {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 
 	.navbar-collapse.collapsing {
