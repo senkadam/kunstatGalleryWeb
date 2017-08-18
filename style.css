@@ -30,6 +30,8 @@ Table of Index
  	1. GLOBAL
    ================================ */
 
+
+
 .masonry {
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
@@ -1078,4 +1080,27 @@ footer {
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px;
+}
+
+@media (max-width: 767px) {
+	.navbar-collapse.in {
+		margin-top: 100px;
+	}
+
+	.navbar-collapse.collapsing {
+		margin-top: 80px;
+	}
+
+
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	#containermenu {
+		width: 760px;
+	}
+}
+
+@media (max-width: 1023px) {
+	#logo{
+	width: 40%;
+}
 }
