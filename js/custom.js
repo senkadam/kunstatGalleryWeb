@@ -18,6 +18,8 @@ $(window).load(function() {
   $('body').delay(350).css({'overflow':'visible'});
 });
 
+
+
 /* ==============================================
     jQuery Instafeed
    =============================================== */
@@ -51,7 +53,16 @@ $( document ).ready(function() {
       $('.grid').masonry({
         // options
       });
-    });  
+    });
+
+$( document ).ready(function() {
+    $('#index-cover-img').width($('#index-cover-div').width());
+});
+
+window.addEventListener('resize', function (){
+    $('#index-cover-img').width($('#index-cover-div').width())
+});
+
 
 /* ======================================
      Full Screen Header
