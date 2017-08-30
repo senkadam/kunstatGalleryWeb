@@ -37,12 +37,12 @@ $(function() {
      Google Map
    ==================================== */
  $('#map').gMap({
-  address: "Quito, Ecuador",
-  zoom: 5,
+  address: " Řetězová 222/3, 110 00 Staré Město, Česko",
+  zoom: 18,
   markers:[
     {
-      latitude: -2.2014,
-      longitude: -80.9763,
+      latitude: 50.0854551,
+      longitude: 14.4169679,
       html: "_latlng"
     }
   ]
