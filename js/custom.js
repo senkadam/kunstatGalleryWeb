@@ -23,16 +23,7 @@ $(window).load(function() {
 /* ==============================================
     jQuery Instafeed
    =============================================== */
-$(function() {
-      var userFeed = new Instafeed({
-          limit: 16,
-          get: 'tagged',
-          tagName: 'awesome',
-          accessToken: '2106621868.95809bd.6cedcfe289c44294b83e1602f419049e',
-          template: '<a target="_blank" href="{{link}}"><img src="{{image}}" /></a>'
-      });
-      userFeed.run();
-});
+
 /* ====================================
      Google Map
    ==================================== */

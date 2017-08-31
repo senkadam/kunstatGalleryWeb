@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GALERIE U KUNŠTÁTŮ</title>
+    <title>Proběhlé výstavy - GALERIE U KUNŠTÁTŮ</title>
 
     <!--  Favicons  -->
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
@@ -28,29 +28,6 @@
 </head>
 <body>
 <header id="header" class="header navbar-fixed-top fixed-nav">
-    <div class="container" id="containermenu">
-        <!-- Static navbar -->
-        <div class="navbar" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a id="logo" class="navbar-brand" href="index.html"><img src="images/logo_kunstat_gallery.png"/></a>
-            </div>9.1. – 28.2. 2016
-            <div class="navbar-collapse collapse" id="collapsediv">
-                <!-- Right nav -->
-                <ul class="nav navbar-nav right">
-                    <li><a href="contact.html">Kontakt</a></li>
-                    <li><a href="about.html">O nás</a></li>
-                    <li><a href="archive.html" class="active_menu">Proběhlé výstavy</a></li>
-                    <li><a href="index.html">Aktuální výstava</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </div> <!-- End .container -->
 </header>
 <!--
     =====================
@@ -394,41 +371,7 @@
                     ===============
                 -->
             </div> <!-- End .col-md-8 -->
-            <div class="col-md-4">
-                <div class="sidebar">
-                    <div class="widget-box">
-                        <div class="widget-title">
-                            <span>Kunštát Gallery</span>
-                            <div class="line"></div>
-                        </div> <!-- End .widget-title -->
-                        <div class="widget-item">
-                            <img src="images/about-me.jpg" alt="About Me Image">
-                            <div class="sidebar-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud.</p>
-                            </div> <!-- End .sidebar-text -->
-                        </div> <!-- End .widget-item -->
-                    </div> <!-- End .widget-box -->
-
-                    <div class="widget-box">
-                        <div class="widget-title">
-                            <span>SLEDUJ NÁS NA:</span>
-                            <div class="line"></div>
-                        </div> <!-- End .widget-title -->
-                        <div class="widget-item">
-                            <span class="social"><a href="#"><i class="fa fa-facebook"></i></a></span>
-                            <span class="social"><a href="#"><i class="fa fa-twitter"></i></a></span>
-                            <span class="social"><a href="#"><i class="fa fa-google-plus"></i></a></span>
-                            <span class="social"><a href="#"><i class="fa fa-pinterest"></i></a></span>
-                            <span class="social"><a href="#"><i class="fa fa-instagram"></i></a></span>
-                            <span class="social"><a href="#"><i class="fa fa-youtube-play"></i></a></span>
-                            <span class="social"><a href="#"><i class="fa fa-rss"></i></a></span>
-                        </div> <!-- End .widget-item -->
-                    </div> <!-- End .widget-box -->
-
-
-                </div>
+            <div class="col-md-4" id="sidebar">
                 <!--
                    =================
                      End .sidebar
@@ -446,19 +389,6 @@
 -->
 
 <footer id="footer" class="footer">
-    <div class="container">
-        <div class="footer-nav">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="archive.html">Archive</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </div> <!-- End .footer-nav -->
-        <div class="copyright">
-            <span>Vyrobeno roku 2017, <span><i class="fa fa-heart"></i></span><a href="#">Adam Šenk</a></span>
-        </div> <!-- End .copyright -->
-    </div> <!-- End .container -->
 </footer>
 <!--
    =======================
@@ -490,5 +420,19 @@
 
 <!-- All custom jQuery -->
 <script src="js/custom.js"></script>
+<script>
+    $( document ).ready(function() {
+
+        $("#sidebar").load("./parts/side.html");
+        $("#footer").load("./parts/footer.html", function () {
+            $('#archive-footer').addClass("active")
+        });
+        $("#header").load("./parts/header.html", function () {
+                $('#archive-header').addClass("active_menu");
+            }
+        );
+    });
+
+</script>
 </body>
 </html>
