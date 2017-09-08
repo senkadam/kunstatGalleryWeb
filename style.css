@@ -1107,13 +1107,22 @@ footer {
 	}
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	#logo{
 	width: 100px;
 		padding-left: 15px;
 }
 }
 
+
+@media (max-width: 767px) {
+	#logo{
+		width: 80px;
+		padding-left: 15px;
+		position: absolute;
+		top:8px;
+	}
+}
 
 .intext {
 	font-family: 'Droid Sans', sans-serif;
